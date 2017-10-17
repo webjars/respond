@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>respond</artifactId>
-    <version>1.4.3-SNAPSHOT</version>
+    <version>1.4.2-1-SNAPSHOT</version>
     <name>Respond.js</name>
     <description>WebJar for Respond.js</description>
     <url>http://webjars.org</url>
@@ -48,6 +48,13 @@
         <upstream.version>1.4.2</upstream.version>
         <upstream.url>https://github.com/scottjehl/Respond/archive</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
+        <requirejs>
+            {
+                "paths": {
+                    "respond": "respond"
+                }
+            }
+        </requirejs>
     </properties>
     
     <build>
@@ -95,20 +102,13 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-release-plugin</artifactId>
-                <version>2.4.2</version>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.apache.maven.scm</groupId>
-                        <artifactId>maven-scm-provider-gitexe</artifactId>
-                        <version>1.9</version>
-                    </dependency>
-                </dependencies>
+                <version>2.5.3</version>
             </plugin>
 
             <plugin>
                 <groupId>org.sonatype.plugins</groupId>
                 <artifactId>nexus-staging-maven-plugin</artifactId>
-                <version>1.5.1</version>
+                <version>1.6.8</version>
                 <extensions>true</extensions>
                 <configuration>
                     <serverId>sonatype-nexus-staging</serverId>
