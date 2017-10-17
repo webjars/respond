@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>respond</artifactId>
-    <version>1.4.2-1</version>
+    <version>1.4.2-2-SNAPSHOT</version>
     <name>Respond.js</name>
     <description>WebJar for Respond.js</description>
     <url>http://webjars.org</url>
@@ -40,7 +40,7 @@
         <url>http://github.com/webjars/respond</url>
         <connection>scm:git:https://github.com/webjars/respond.git</connection>
         <developerConnection>scm:git:https://github.com/webjars/respond.git</developerConnection>
-        <tag>respond-1.4.2-1</tag>
+        <tag>HEAD</tag>
     </scm>
     
     <properties>
